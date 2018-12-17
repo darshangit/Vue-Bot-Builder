@@ -11,7 +11,7 @@
       </nav>
     </header>
     <main>
-      <RobotBuilder/>
+            <RobotBuilder/>
     </main>
   </div>
 </template>
@@ -38,6 +38,7 @@ body {
 
 
 <style scoped>
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
@@ -72,4 +73,10 @@ ul {
   vertical-align: middle;
   height: 30px;
 }
+
+/* //deep selctor */
+/* .content >>> .robot-name{
+  color: red;
+  border: 2px solid blue;
+} */
 </style>
