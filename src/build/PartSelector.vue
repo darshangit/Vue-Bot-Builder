@@ -38,7 +38,11 @@ export default {
       return this.parts[this.selectedPartIndex];
     },
   },
+
   created() {
+    this.emitSelectedPart();
+  },
+  updated() {
     this.emitSelectedPart();
   },
   methods: {
@@ -50,14 +54,12 @@ export default {
         this.selectedPartIndex,
         this.parts.length,
       );
-      this.emitSelectedPart();
     },
     selectPreviousPart() {
       this.selectedPartIndex = getPreviousValidIndex(
         this.selectedPartIndex,
         this.parts.length,
       );
-      this.emitSelectedPart();
     },
 
   },
